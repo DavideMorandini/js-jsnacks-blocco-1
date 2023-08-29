@@ -22,6 +22,6 @@ if (numberChoice_1 > numberChoice_2) {
 }
 
 // Restituzione
-document.getElementById("my_number").innerHTML = finalChoice;
+document.getElementById("my_number").innerHTML = ("Il numero maggiore è" + " " + finalChoice);
 
 
