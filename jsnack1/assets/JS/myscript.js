@@ -37,13 +37,16 @@ while (finalChoice) {
 
     let numberChoice_2 = Number(prompt("Inserisci un numero a piacere"));
 
-    if (numberChoice_1 > numberChoice_2) {
-            finalChoice = numberChoice_1;
-            console.log(numberChoice_1); 
-        
-        } else {
-            finalChoice = numberChoice_2;
-            console.log(numberChoice_2);
-        }
+    finalChoice = confirm("vuoi uscire dal ciclo?");
 }
+
+if (numberChoice_1 > numberChoice_2) {
+    finalChoice = numberChoice_1;
+    console.log(numberChoice_1); 
+
+} else {
+    finalChoice = numberChoice_2;
+    console.log(numberChoice_2);
+}
+
 document.getElementById("my_number").innerHTML = ("Il numero maggiore è" + " " + finalChoice);
