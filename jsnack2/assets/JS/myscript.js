@@ -23,3 +23,33 @@ if (wordChoice_1.length > wordChoice_2.length) {
 
 // Restituzione
 document.getElementById("my_word").innerHTML = ("La parola più lunga è:" + " " + finalChoice);
+
+
+
+// Stesso esercizio ma con il ciclo While
+let i = 1;
+let listaParole = []
+
+while (i <= 2) {
+    let parolaUtente =(prompt("Inserisci una parola a piacere"));
+
+    if (isNaN(parolaUtente)) {
+        alert("Inserisci un numero");
+        i--;
+
+    } else {
+        listaParole.push(parolaUtente);
+        i++
+    }
+}
+
+if (listaParole[0] > listaParole[1]) {
+    console.log("la prima parola è più lunga" + listaParole[1]); 
+
+} else if (listaParole[1] > listaNumeri[0]) {
+    console.log("la seconda parola è più lunga" + listaParole[0]);
+
+} else {
+    console.log(("le parole sono uguali" + listaParole[0]));
+}
+
