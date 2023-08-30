@@ -30,10 +30,10 @@
 
 // Stesso ragionamento ma con il ciclo While
 
-let = 1;
+let i = 1;
 let listaNumeri = []
 
-while (1 < 2) {
+while (i <= 2) {
     let numeroUtente = Number(prompt("Inserisci un numero a piacere"));
 
     if (isNaN(numeroUtente)) {
@@ -42,8 +42,8 @@ while (1 < 2) {
 
     } else {
         listaNumeri.push(numeroUtente);
+        i++
     }
-    i++
 }
 
 if (listaNumeri[0] > listaNumeri[1]) {
