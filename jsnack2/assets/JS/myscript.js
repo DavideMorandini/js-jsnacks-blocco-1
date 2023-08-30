@@ -31,10 +31,10 @@ let i = 1;
 let listaParole = []
 
 while (i <= 2) {
-    let parolaUtente =(prompt("Inserisci una parola a piacere"));
+    let parolaUtente = (prompt("Inserisci una parola a piacere"));
 
-    if (isNaN(parolaUtente)) {
-        alert("Inserisci un numero");
+    if (listaParole[0] > listaParole[1]) {
+        console.log(listaParole[1]); 
         i--;
 
     } else {
@@ -53,3 +53,12 @@ if (listaParole[0] > listaParole[1]) {
     console.log(("le parole sono uguali" + listaParole[0]));
 }
 
+
+// if (isNaN(parolaUtente)) {
+//     alert("Inserisci un numero");
+//     i--;
+
+// } else {
+//     listaParole.push(parolaUtente);
+//     i++
+// }

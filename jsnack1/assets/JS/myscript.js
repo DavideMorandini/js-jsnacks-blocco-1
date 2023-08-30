@@ -30,30 +30,32 @@
 
 // Stesso ragionamento ma con il ciclo While
 
-let i = 1;
-let listaNumeri = []
+
+let i = 1
+
+let listNumber = [];
 
 while (i <= 2) {
-    let numeroUtente = Number(prompt("Inserisci un numero a piacere"));
+    const userNumber = Number(prompt('Type a number'));
 
-    if (isNaN(numeroUtente)) {
-        alert("Inserisci un numero");
+    if (isNaN(userNumber)) {
+        alert('Non hai inserito un numero');
         i--;
-
     } else {
-        listaNumeri.push(numeroUtente);
-        i++
+        listNumber.push(userNumber)
+        
     }
+    i++
 }
 
-if (listaNumeri[0] > listaNumeri[1]) {
-    console.log("il primo numero è più grande" + listaNumeri[1]); 
+console.log(listNumber);
 
-} else if (listaNumeri[1] > listaNumeri[0]) {
-    console.log("il secondo numero è più grande" + listaNumeri[0]);
-
+if (listNumber[0] > listNumber [1]) {
+    console.log(listNumber[0]);
+} else if (listNumber[1] > listNumber [0]) {
+    console.log(listNumber[1]);
 } else {
-    console.log(("i numeri scelti sono uguali" + listaNumeri[0]));
+    console.log(listNumber[0]);
 }
 
 
