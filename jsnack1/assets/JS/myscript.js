@@ -30,23 +30,23 @@
 
 // Stesso ragionamento ma con il ciclo While
 
-let finalChoice = true;
+let = i;
+let listaNumeri = []
 
-while (finalChoice) {
-    let numberChoice_1 = Number(prompt("Inserisci un numero a piacere"));
+while (1 < 2) {
+    let numeroUtente = Number(prompt("Inserisci un numero a piacere"));
 
-    let numberChoice_2 = Number(prompt("Inserisci un numero a piacere"));
+    if (isNaN(numeroUtente)) {
+        alert("Inserisci un numero");
+        i--;
 
-    finalChoice = confirm("vuoi uscire dal ciclo?");
+    } else {
+        listaNumeri.push(numeroUtente);
+    }
+    i++
 }
 
-if (numberChoice_1 > numberChoice_2) {
-    finalChoice = numberChoice_1;
-    console.log(numberChoice_1); 
 
-} else {
-    finalChoice = numberChoice_2;
-    console.log(numberChoice_2);
-}
+
 
 document.getElementById("my_number").innerHTML = ("Il numero maggiore è" + " " + finalChoice);
