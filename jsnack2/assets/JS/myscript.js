@@ -28,37 +28,46 @@ document.getElementById("my_word").innerHTML = ("La parola più lunga è:" + " "
 
 // Stesso esercizio ma con il ciclo While
 let i = 1;
-let listaParole = []
+let parolaUtente = [];
+let parolaLunghezza = [];
 
 while (i <= 2) {
-    let parolaUtente = (prompt("Inserisci una parola a piacere"));
 
-    if (listaParole[0] > listaParole[1]) {
-        console.log(listaParole[1]); 
+    const parolaUtente = prompt(`Type word number ${i}`);
+
+    if (!isNaN(parolaUtente)) {
+
+        alert("Non hai inserito una parola");
+
         i--;
 
     } else {
-        listaParole.push(parolaUtente);
-        i++
+
+        const parolaLunghezza = parolaUtente.length;
+
+        parolaUtente.push(parolaUtente);
+        parolaLunghezza.push(parolaLunghezza);
+
+        console.log(parolaUtente,parolaLunghezza);
     }
+
+    i++
 }
 
-if (listaParole[0] > listaParole[1]) {
-    console.log("la prima parola è più lunga" + listaParole[1]); 
+const paroalEl = document.querySelector("my_word");
 
-} else if (listaParole[1] > listaNumeri[0]) {
-    console.log("la seconda parola è più lunga" + listaParole[0]);
+if (parolaLunghezza[0] > parolaLunghezza[1]) {
+
+    paroalEl.insertAdjacentHTML("beforeend", `${parolaUtente[1]}<br>`);
+    paroalEl.insertAdjacentHTML("beforeend", `${parolaUtente[0]}<br>`);
+
+} else if (parolaLunghezza[1] > parolaLunghezza[0]) {
+
+    paroalEl.insertAdjacentHTML("beforeend", `${parolaUtente[0]}<br>`);
+    paroalEl.insertAdjacentHTML("beforeend", `${parolaUtente[1]}<br>`);
 
 } else {
-    console.log(("le parole sono uguali" + listaParole[0]));
+    paroalEl.insertAdjacentHTML("beforeend", `${parolaUtente[0]}<br>`);
+    paroalEl.insertAdjacentHTML("beforeend", `${parolaUtente[1]}<br>`);
 }
 
-
-// if (isNaN(parolaUtente)) {
-//     alert("Inserisci un numero");
-//     i--;
-
-// } else {
-//     listaParole.push(parolaUtente);
-//     i++
-// }
