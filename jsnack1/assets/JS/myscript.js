@@ -30,7 +30,7 @@
 
 // Stesso ragionamento ma con il ciclo While
 
-let = i;
+let = 1;
 let listaNumeri = []
 
 while (1 < 2) {
@@ -46,7 +46,14 @@ while (1 < 2) {
     i++
 }
 
+if (listaNumeri[0] > listaNumeri[1]) {
+    console.log("il primo numero è più grande" + listaNumeri[1]); 
+
+} else if (listaNumeri[1] > listaNumeri[0]) {
+    console.log("il secondo numero è più grande" + listaNumeri[0]);
+
+} else {
+    console.log(("i numeri scelti sono uguali" + listaNumeri[0]));
+}
 
 
-
-document.getElementById("my_number").innerHTML = ("Il numero maggiore è" + " " + finalChoice);
